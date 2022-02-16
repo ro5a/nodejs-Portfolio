@@ -1,11 +1,15 @@
-const express = require('express');
-const app = express();
-app.get('/', (req, res) => {
-    res.render('index', {
-        title: 'Homepage'
-      });
-  });
-  app.set('view engine', 'pug');
-const server = app.listen(7000, () => {
-    console.log(`Express running → PORT ${server.address().port}`);
-  });
+var express = require('express');
+var app = express();
+
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
+// use res.render to load up an ejs view file
+
+// index page
+app.get('/', function(req, res) {
+  res.render('pages/index');
+});
+
+app.listen(8080);
+console.log('Server is listening on port 8080');
