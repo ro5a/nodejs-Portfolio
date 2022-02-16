@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npx nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ro5a/nodejs-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ro5a/nodejs-Portfolio/issues"
+  },
+  "homepage": "https://github.com/ro5a/nodejs-Portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "jade": "^1.11.0",
+    "pug": "^3.0.2"
+  }
+}
